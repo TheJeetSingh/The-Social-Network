@@ -11,7 +11,6 @@ import { useUser } from './contexts/UserContext';
 import LandingPage from './pages/LandingPage';
 import AdminDashboard from './pages/AdminDashboard';
 import UserDashboard from './pages/UserDashboard';
-import AuthCallback from './pages/AuthCallback';
 import DeveloperPortal from './pages/DeveloperPortal';
 
 // Error Boundary Component
@@ -81,9 +80,6 @@ function AppContent() {
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/dashboard" element={<UserDashboard />} />
           <Route path="/developers" element={<DeveloperPortal />} />
-          <Route path="/auth-callback" element={<AuthCallback />} />
-          <Route path="/auth/callback" element={<AuthCallback />} />
-          <Route path="/callback" element={<AuthCallback />} />
           {/* Catch all route for 404 */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
