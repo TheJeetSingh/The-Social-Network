@@ -1096,6 +1096,28 @@ body {
   cursor: not-allowed;
 }
 
+.toggle-auth-mode {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: transparent;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.toggle-auth-mode:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.toggle-auth-mode:disabled {
+  color: #444;
+  cursor: not-allowed;
+}
+
 .landing-status-message {
   margin-top: 2rem;
   padding: 1rem 1.5rem;
